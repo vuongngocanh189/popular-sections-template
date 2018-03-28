@@ -23,7 +23,7 @@ Font: Open Sans
 Image: [Photo](https://unsplash.com/photos/Qsw3tv7hRiY) by bady qb on [Unsplash](https://unsplash.com/)
 
 * Simple parallax
-* Background overlay (uncomment the .overlay style and <div class="overlay"></div> if you want to use this)
+* Background overlay (uncomment the .overlay style and div class `overlay` if you want to use this)
 * Heading (h1) and subtext (p)
 * Simple form that requires email only
 * Responsive ready
