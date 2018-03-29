@@ -34,20 +34,20 @@ Image: [Photo](https://unsplash.com/photos/Qsw3tv7hRiY) by bady qb on [Unsplash]
 * Heading (h1) and subtext (p)
 * Simple form that requires email only
 * Responsive ready
-* [Raw code] (https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/cta-form.html)
+* [Raw code](https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/cta-form.html)
 
 ## Info-section
 
 * Section with one column
 * Section with two column
 * Responsive ready
-* [Raw code] (https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/info-align.html)
+* [Raw code](https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/info-align.html)
 
 ## FAQ section
 
 * Questions and answers accordion which opens when clicked
 * Responsive ready
-* [Raw code] (https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/faq.html)
+* [Raw code](https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/faq.html)
 
 
 
