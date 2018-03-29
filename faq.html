@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap FAQ section</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		html {
+    		height: 100%;
+    		min-height: 100%;
+    	}
+		body{
+			font-family: Open Sans;
+    		min-height: 100%;
+    		color: #555;
+    	}
+		section{
+			padding: 100px 0;
+			margin: 0;
+			border-bottom: 1px solid #eee;
+		}
+		.white-bg{
+			background-color: white;
+		}
+		h1{
+			font-weight: 700;
+			font-size: 35px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		p{
+			font-weight: 300;
+			font-size: 18px;
+		}
+		h4.subtitle{
+			font-size: 15px;
+			color: #a7a9ac;
+			margin-top: -10px;
+			font-style: italic;
+			text-align: center;
+		}
+		.heading{
+			margin-bottom: 30px;
+		}
+		.section-title{
+			text-align: center;
+		}
+
+		.section-txt{
+			margin-top: 20px;
+		}
+		/* ACCORDION */
+		#accordion {
+		  margin: 25px 0;
+		}
+
+		.card {
+		  margin-bottom: 5px;
+		}
+
+		.card-header {
+		  padding: 5px 15px;
+		  background-color: #fff;
+		}
+
+		.card-body {
+		  padding: 20px;
+		}
+
+		.card-body p {
+		  margin: 0;
+		  text-align: left;
+		}
+
+		.faq-btn {
+		  padding: 15px 15px 15px 0;
+		  text-align: left;
+		  white-space: normal;
+		  color: #569789;
+		  width: 100%;
+		  font-weight: 300;
+		  display: inline-flex;
+		  display: -webkit-inline-flex;
+		  display: -ms-inline-flexbox;
+		  align-items: center;
+		  -webkit-align-items: center;
+		}
+
+		span.faq-que{
+		  width: 90%;
+		}
+
+		span.ifaq {
+		    width: 10%;
+		    text-align: right;
+		}
+
+		.btn-link:focus, .btn-link:hover {
+		  color: #569789;
+		  text-decoration: none;
+		  background-color: transparent;
+		}
+
+		.btn.focus, .btn:focus {
+		    box-shadow: none;
+		}
+
+		/*RESPONSIVE*/
+		@media (max-width: 767px){
+			section{
+				padding: 30px;
+			}
+		}
+		@media (max-width: 480px){
+			h1{
+				font-size: 25px;
+			}
+			p{
+				font-size: 15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section class="white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 heading">	
+					<h1 class="section-title">FAQ</h1>
+					<h4 class="subtitle">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+				</div>
+		        <div class="col-md-8 offset-md-2">
+		          	<div id="accordion">
+		            <div class="card">
+		              <div class="card-header" id="headingOne">
+		                <h5 class="mb-0">
+		                  <button class="btn btn-link faq-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		                    <span class="faq-que">1. Question 1</span>
+		                    <span class="ifaq"><i class="fa fa-plus"></i></span>
+		                  </button>
+		                </h5>
+		              </div>
+
+		              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+		                <div class="card-body">
+		                  Answer 1
+		                </div>
+		              </div>
+		            </div>
+		            <div class="card">
+		              <div class="card-header" id="headingTwo">
+		                <h5 class="mb-0">
+		                  <button class="btn btn-link collapsed faq-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		                    <span class="faq-que">2. Question 2</span>
+		                    <span class="ifaq"><i class="fa fa-plus"></i></span>
+		                  </button>
+		                </h5>
+		              </div>
+		              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+		                <div class="card-body">
+		                  Answer 2
+		                </div>
+		              </div>
+		            </div>
+		            <div class="card">
+		              <div class="card-header" id="headingThree">
+		                <h5 class="mb-0">
+		                  <button class="btn btn-link collapsed faq-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		                    <span class="faq-que">3. Question 3</span>
+		                    <span class="ifaq"><i class="fa fa-plus"></i></span>
+		                  </button>
+		                </h5>
+		              </div>
+		              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+		                <div class="card-body">
+		                  Answer 3
+		                </div>
+		              </div>
+		            </div>
+		            <div class="card">
+		              <div class="card-header" id="headingFour">
+		                <h5 class="mb-0">
+		                  <button class="btn btn-link collapsed faq-btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+		                    <span class="faq-que">3. Question 4</span>
+		                    <span class="ifaq"><i class="fa fa-plus"></i></span>
+		                  </button>
+		                </h5>
+		              </div>
+		              <div id="collapseFour" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+		                <div class="card-body">
+		                  Answer 4
+		                </div>
+		              </div>
+		            </div>
+		            <div class="card">
+		              <div class="card-header" id="headingFive">
+		                <h5 class="mb-0">
+		                  <button class="btn btn-link collapsed faq-btn" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		                    <span class="faq-que">3. Question 5</span>
+		                    <span class="ifaq"><i class="fa fa-plus"></i></span>
+		                  </button>
+		                </h5>
+		              </div>
+		              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+		                <div class="card-body">
+		                  Answer 5
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		       </div>
+		    </div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>

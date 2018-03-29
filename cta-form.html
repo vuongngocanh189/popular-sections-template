@@ -33,14 +33,14 @@
 			top: 0;
 			bottom: 0;
 		}*/
-		#cta-transparent{
+		.cta-transparent{
 			background: transparent;
 		}
 		.cta {
 			background: rgba(236,236,236, 0.3);
 			padding: 40px;
 		}
-		#white-bg{
+		.white-bg{
 			background-color: white;
 		}
 		h1{
@@ -54,6 +54,21 @@
 			font-size: 20px;
 		}
 		/*SIGN UP FORM*/
+		:placeholder{
+			text-align: center;
+		}
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  text-align: center;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+		  text-align: center;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+		  text-align: center;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		  text-align: center;
+		}
 		#submit, #free-sample-input-email
 		{
 			border: 0;
@@ -75,10 +90,7 @@
 			width: 100%;
 			padding: 10px;
 		}
-		/*.center-flex{
-			display: inline-flex;
-			align-items: center;
-		}*/
+		
 		/*RESPONSIVE*/
 		@media (max-width: 767px){
 			section{
@@ -99,7 +111,7 @@
 	</style>
 </head>
 <body>
-	<section id="cta-transparent">
+	<section class="cta-transparent">
 		<!-- <div class="overlay"></div> -->
 		<div class="container">
 			<div class="row">
@@ -113,6 +125,8 @@
 		          	<li>€1000 as a gift</li>
 		          </ul>
 		          <p>Sign up now to join the competition:</p>
+
+		          <!-- SIGN UP FORM -->
 		          <div id="sign-up-form">
 		              <form action="">
 		                <input type="email" name="email" class="required email" id="free-sample-input-email" placeholder="you@company.com" />
@@ -123,7 +137,9 @@
 		    </div>
 		</div>
 	</section>
-	<section id="white-bg">
+
+	<!-- OTHER SECTION -->
+	<section class="white-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>All in one</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- Choose Template Navbar -->
+<nav id="settings">
+	<div class="container">
+		<ul id="index-ul">
+		  <li class="li-title">Choose a section template:</li>
+		  <li class="li-click" id="info-align">Info</li>
+		  <li class="li-click" id="faq">FAQ</li>
+		  <li class="li-click" id="cta-form">CTA-signup</li>
+		  <li id="see-code" class="hide">See code</li>
+		</ul>
+    </div>
+</nav>
+
+<!-- Template loads here -->
+<div id="append"></div>
+
+<!-- Modal -->
+  <div class="modal bs-example-modal-lg" id="code-modal" role="dialog">
+    <div class="modal-dialog">  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Raw Code</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>   
+    </div>
+  </div><!-- End modal -->
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+$(".hide").hide();
+$(document).ready(function() {
+	var arr = ["info-align", "faq", "cta-form"];
+	$.each(arr, function (i, val) {
+		$("#"+val).click(function(e) {
+			e.preventDefault();
+			$("#append").html("");
+			$(".hide").show();
+			$.get("parts/"+val+".html", function (data) {
+		        $("#append").append(data);
+		        $(".li-click").removeClass("active");
+		        $("#"+val).addClass("active");
+			    $("#see-code").click(function() {
+					window.open('https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/'+ val +'.html', '_blank');
+				});
+		    });
+		});
+	});
+});
+</script>
+</html>
