@@ -20,7 +20,7 @@ CSS: Bootstrap
 
 ## All section templates
 
-Demo: 
+Demo: [Click here](https://vuongngocanh189.github.io/popular-sections-template/)
 
 Click on buttons to navigate over different sections.
 Click `See Code` to open the consequent Github raw code.
