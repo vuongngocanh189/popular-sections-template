@@ -165,6 +165,16 @@ span.ifaq {
     text-align: right;
 }
 
+.btn-link:focus, .btn-link:hover {
+  color: #569789;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
 /*SIGN UP FORM*/
 :placeholder{
 	text-align: center;
