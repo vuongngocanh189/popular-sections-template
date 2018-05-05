@@ -220,7 +220,7 @@ span.ifaq {
 	padding: 0 20px;
 	text-align: center;
 }
-#pricing-section.small{
+#pricing-section .small{
 	font-weight: 300!important;
 }
 .price-block{
