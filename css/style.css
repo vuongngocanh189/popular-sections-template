@@ -124,20 +124,20 @@ h4.subtitle{
   margin: 25px 0;
 }
 
-.card {
+#accordion .card {
   margin-bottom: 15px;
 }
 
-.card-header {
+#accordion .card-header {
   padding: 5px 15px;
   background-color: #fff;
 }
 
-.card-body {
+#accordion .card-body {
   padding: 20px;
 }
 
-.card-body p {
+#accordion .card-body p {
   margin: 0;
   text-align: left;
 }
@@ -213,6 +213,48 @@ span.ifaq {
 	width: 100%;
 	padding: 10px;
 }
+
+/*PRICING*/
+
+.lead{
+	padding: 0 20px;
+	text-align: center;
+}
+.price-block{
+	margin-top: 30px;
+}
+.price-list{
+	text-align: left!important;
+	list-style-type: none;
+	font-size: 15px;
+}
+.price-number{
+	font-weight: 700;
+}
+li.price:before{
+	font-family: 'FontAwesome';
+	margin:0 5px 0 -15px;
+}
+li.price-include:before{
+	content: '\f00c';
+	color: green;
+}		
+li.price-remove:before{
+	content: '\f00d';
+	color: red;
+}
+li.price-include{
+	font-weight: 500;
+}
+li.price-remove{
+	font-weight: 300;
+}
+.badge-light{
+	background: #E8850C;
+	color: #fafafa;
+	padding: 10px;
+}
+
 
 /*RESPONSIVE*/
 @media (max-width: 767px){

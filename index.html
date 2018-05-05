@@ -18,6 +18,7 @@
 		  <li class="li-click" id="info-align">Info</li>
 		  <li class="li-click" id="faq">FAQ</li>
 		  <li class="li-click" id="cta-form">CTA-signup</li>
+		  <li class="li-click" id="pricing">Pricing</li>
 		  <li id="see-code" class="hide">See code</li>
 		</ul>
     </div>
@@ -51,7 +52,7 @@
 <script>
 $(".hide").hide();
 $(document).ready(function() {
-	var arr = ["info-align", "faq", "cta-form"];
+	var arr = ["info-align", "faq", "cta-form", "pricing"];
 	$.each(arr, function (i, val) {
 		$("#"+val).click(function(e) {
 			e.preventDefault();

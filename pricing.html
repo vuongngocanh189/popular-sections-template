@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pricing table examples</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		html {
+    		height: 100%;
+    		min-height: 100%;
+    	}
+		body{
+			font-family: Open Sans;
+    		min-height: 100%;
+    		color: #555;
+    	}
+		section{
+			padding: 100px 0;
+			margin: 0;
+			border-bottom: 1px solid #eee;
+		}
+		.white-bg{
+			background-color: white;
+		}
+		h1{
+			font-weight: 700;
+			font-size: 35px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		p{
+			font-weight: 300;
+			font-size: 18px;
+		}
+		h4.subtitle{
+			font-size: 15px;
+			color: #a7a9ac;
+			margin-top: -10px;
+			font-style: italic;
+			text-align: center;
+		}
+		.section-title{
+			text-align: center;
+		}
+		.small{
+			font-weight: 300;
+		}
+		.heading{
+			margin-bottom: 30px;
+		}
+		.lead{
+			padding: 0 20px;
+			text-align: center;
+		}
+		.price-block{
+			margin-top: 30px;
+		}
+		.price-list{
+			text-align: left!important;
+			list-style-type: none;
+			font-size: 15px;
+		}
+		.price-number{
+			font-weight: 700;
+		}
+		li.price:before{
+			font-family: 'FontAwesome';
+			margin:0 5px 0 -15px;
+		}
+		li.price-include:before{
+			content: '\f00c';
+			color: green;
+		}		
+		li.price-remove:before{
+			content: '\f00d';
+			color: red;
+		}
+		li.price-include{
+			font-weight: 500;
+		}
+		li.price-remove{
+			font-weight: 300;
+		}
+		.badge-light{
+			background: #E8850C;
+			color: #fafafa;
+			padding: 10px;
+		}
+
+		/*RESPONSIVE*/
+		@media (max-width: 767px){
+			section{
+				padding: 30px;
+			}
+		}
+		@media (max-width: 480px){
+			h1{
+				font-size: 25px;
+			}
+			p{
+				font-size: 15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section class="white-bg">
+		<div class="container">
+        	<div class="heading">
+        		<h1 class="section-title">Pricing Table 1 - Petcare service</h1>
+          		<h4 class="lead">Choose the most suitable subscription package for your pet(s)</h4>
+        	</div>
+          	<div class="row">
+          		<div class="col-lg-4">
+          			<div class="card price-block text-center">
+          				<div class="card-header card-title">Bronze Package</div>
+          				<div class="card-body">
+						    <h5 class="card-title price-number">€25/month</h5>
+						    <p class="small">Get to know each other</p>
+						    <hr>
+						    <ul class="price-list">
+						    	<li class="price price-include">1 pet</li>
+						    	<li class="price price-include">3 days / week</li>
+						    	<li class="price price-include">15-minute walk / day</li>
+						    	<li class="price price-include">10-minute groom / day</li>
+						    	<li class="price price-remove">20-minute play / day</li>
+						    	<li class="price price-remove">Monthly haircut</li>
+						    	<li class="price price-remove">Daily wash</li>
+						    	<li class="price price-remove">Monthly photobook</li>
+						    	<li class="price price-remove">24/7 assistance</li>
+						    </ul>
+							<hr>
+							<a href="#" class="btn btn-success">I want this!</a>
+						</div>
+          			</div><!-- card -->
+          		</div><!-- col -->
+          		<div class="col-lg-4">
+          			<div class="card price-block text-center">
+          				<div class="card-header card-title">Silver Package <span class="badge badge-light">Most popular</span></div>
+          				<div class="card-body">
+						    <h5 class="card-title price-number">€50/month</h5>
+						    <p class="small">What your pets need</p>
+						    <hr>
+						    <ul class="price-list">
+						    	<li class="price price-include">3 pets</li>
+						    	<li class="price price-include">5 days / week</li>
+						    	<li class="price price-include">15-minute walk / day</li>
+						    	<li class="price price-include">30-minute groom / day</li>
+						    	<li class="price price-include">20-minute play / day</li>
+						    	<li class="price price-include">Monthly haircut</li>
+						    	<li class="price price-remove">Daily wash</li>
+						    	<li class="price price-remove">Monthly photobook</li>
+						    	<li class="price price-remove">24/7 assistance</li>
+						    </ul>
+							<hr>
+							<a href="#" class="btn btn-success">I want this!</a>
+						</div>
+          			</div><!-- card -->
+          		</div><!-- col -->
+          		<div class="col-lg-4">
+          			<div class="card price-block text-center">
+          				<div class="card-header card-title">Gold Package</div>
+          				<div class="card-body">
+						    <h5 class="card-title price-number">€100/month</h5>
+						    <p class="small">Total caring</p>
+						    <hr>
+						    <ul class="price-list">
+						    	<li class="price price-include">Up to 10 pets</li>
+						    	<li class="price price-include">7 days / week</li>
+						    	<li class="price price-include">Two 15-minute walks / day</li>
+						    	<li class="price price-include">Two 30-minute groom / day</li>
+						    	<li class="price price-include">1-hour play / day</li>		
+						    	<li class="price price-include">Monthly haircut</li>
+						    	<li class="price price-include">Daily wash</li>
+						    	<li class="price price-include">Monthly photobook</li>
+						    	<li class="price price-include">24/7 assistance</li>
+						    </ul>
+							<hr>
+							<a href="#" class="btn btn-success">I want this!</a>
+						</div>
+          			</div><!-- card -->
+          		</div><!-- col -->
+          	</div><!-- row -->
+        </div><!-- container -->
+	</section>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>

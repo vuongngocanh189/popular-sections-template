@@ -49,6 +49,12 @@ Image: [Photo](https://unsplash.com/photos/Qsw3tv7hRiY) by bady qb on [Unsplash]
 * Responsive ready
 * [Raw code](https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/faq.html)
 
+## Pricing section
+
+* 3 pricing tables using Bootstrap cards
+* Responsive ready
+* [Raw code](https://raw.githubusercontent.com/vuongngocanh189/popular-sections-template/master/pricing.html)
+
 
 
 
